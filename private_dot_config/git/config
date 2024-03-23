@@ -1,0 +1,27 @@
+[commit]
+	gpgsign = true
+[core]
+	pager = delta
+[delta]
+	navigate = true
+[diff]
+	colorMoved = default
+[fetch]
+	prune = true
+[init]
+	defaultBranch = main
+[interactive]
+	diffFilter = delta --color-only
+[merge]
+	conflictstyle = diff3
+[pull]
+	rebase = true
+[push]
+	autoSetupRemote = true
+[rebase]
+	autosquash = true
+	autoStash = true
+[user]
+	name = Léo DEVILLE
+	email = 164430108+Ystri0n@users.noreply.github.com
+	signingkey = 186386A44E9D46CBEFF2AAA019819EF700C6EF61

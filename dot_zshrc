@@ -1,0 +1,58 @@
+# XDG Base Directory
+export XDG_CONFIG_HOME="$HOME/.config"
+export XDG_CACHE_HOME="$HOME/.cache"
+export XDG_DATA_HOME="$HOME/.local/share"
+export XDG_STATE_HOME="$HOME/.local/state"
+
+# Oh My Zsh
+export ZSH="$XDG_DATA_HOME/oh-my-zsh"
+
+export DISABLE_AUTO_UPDATE=true
+
+[ -d "$XDG_CACHE_HOME/zsh" ] || mkdir -p "$XDG_CACHE_HOME/zsh"
+export ZSH_COMPDUMP="$XDG_CACHE_HOME/zsh/zcompdump-$ZSH_VERSION"
+
+zstyle :omz:plugins:ssh-agent identities GitHub OVH
+
+VI_MODE_SET_CURSOR=true
+
+typeset -A ZSH_HIGHLIGHT_STYLES
+ZSH_HIGHLIGHT_STYLES[path]='fg=blue,bold'
+
+plugins=(colored-man-pages docker docker-compose fd fzf gpg-agent grc httpie npm ripgrep rust ssh-agent starship sudo vi-mode web-search zsh-autosuggestions zsh-syntax-highlighting)
+
+source "$ZSH/oh-my-zsh.sh"
+
+unset HISTFILE
+
+# Aliases
+alias ls='eza --classify --group-directories-first --icons=auto'
+alias nvim='nvim -i NONE'
+alias orphans='paru -Qtd'
+alias vi='nvim'
+alias vim='nvim'
+alias wget='wget --no-hsts'
+
+# Go
+export GOPATH="$XDG_DATA_HOME/go"
+export GOMODCACHE="$XDG_CACHE_HOME/go/mod"
+
+# GTK
+export GTK_RC_FILES="$XDG_CONFIG_HOME/gtk-1.0/gtkrc"
+export GTK2_RC_FILES="$XDG_CONFIG_HOME/gtk-2.0/gtkrc:$XDG_CONFIG_HOME/gtk-2.0/gtkrc.mine"
+
+# less
+export LESSHISTFILE=-
+
+# Node.js
+export NPM_CONFIG_USERCONFIG="$XDG_CONFIG_HOME/npm/npmrc"
+export PATH="$PATH:$XDG_DATA_HOME/npm/bin"
+
+# Rust
+export CARGO_HOME="$XDG_DATA_HOME/cargo"
+
+# Zellij
+export ZELLIJ_AUTO_ATTACH=true
+export ZELLIJ_AUTO_EXIT=true
+
+eval "$(zellij setup --generate-auto-start zsh)"
