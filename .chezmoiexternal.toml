@@ -16,9 +16,7 @@ url = "https://github.com/zsh-users/zsh-syntax-highlighting/archive/master.tar.g
 exact = true
 stripComponents = 1
 refreshPeriod = "168h"
-[".local/share/pandoc/templates/eisvogel"]
-type = "archive"
-url = "https://github.com/Wandmalfarbe/pandoc-latex-template/archive/master.tar.gz"
-exact = true
-stripComponents = 1
+[".local/share/pandoc/templates/eisvogel.latex"]
+type = "file"
+url = "https://raw.githubusercontent.com/Wandmalfarbe/pandoc-latex-template/master/eisvogel.tex"
 refreshPeriod = "168h"
