@@ -33,6 +33,9 @@ alias vi='nvim'
 alias vim='nvim'
 alias wget='wget --no-hsts'
 
+# chroot
+export CHROOT="$HOME/chroot"
+
 # Go
 export GOPATH="$XDG_DATA_HOME/go"
 export GOMODCACHE="$XDG_CACHE_HOME/go/mod"
