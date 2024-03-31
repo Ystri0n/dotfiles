@@ -4,6 +4,8 @@ export XDG_CACHE_HOME="$HOME/.cache"
 export XDG_DATA_HOME="$HOME/.local/share"
 export XDG_STATE_HOME="$HOME/.local/state"
 
+export PATH="$PATH:$HOME/.local/bin"
+
 # Oh My Zsh
 export ZSH="$XDG_DATA_HOME/oh-my-zsh"
 
