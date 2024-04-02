@@ -16,7 +16,7 @@ export ZSH_COMPDUMP="$XDG_CACHE_HOME/zsh/zcompdump-$ZSH_VERSION"
 
 zstyle :omz:plugins:ssh-agent identities GitHub OVH
 
-VI_MODE_SET_CURSOR=true
+export VI_MODE_SET_CURSOR=true
 
 typeset -A ZSH_HIGHLIGHT_STYLES
 ZSH_HIGHLIGHT_STYLES[path]='fg=blue,bold'
