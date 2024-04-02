@@ -36,7 +36,7 @@ alias vim='nvim'
 alias wget='wget --no-hsts'
 
 # chroot
-export CHROOT="$HOME/chroot"
+export CHROOT="$XDG_DATA_HOME/chroot"
 
 # Go
 export GOPATH="$XDG_DATA_HOME/go"
