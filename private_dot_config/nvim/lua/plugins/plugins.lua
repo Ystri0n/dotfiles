@@ -17,6 +17,7 @@ return {
           never_show = { ".git" },
         },
       },
+      log_to_file = "/dev/null",
     },
   },
   {
