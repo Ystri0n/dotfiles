@@ -1,9 +1,29 @@
 return {
   {
+    "L3MON4D3/LuaSnip",
+    dependencies = {
+      "rafamadriz/friendly-snippets",
+      config = function()
+        require("luasnip").filetype_extend("twig", { "html" })
+        require("luasnip.loaders.from_vscode").lazy_load()
+      end,
+    },
+  },
+  {
     "lukas-reineke/indent-blankline.nvim",
     opts = {
       indent = {
         tab_char = ">",
+      },
+    },
+  },
+  {
+    "neovim/nvim-lspconfig",
+    opts = {
+      servers = {
+        html = {
+          filetypes = { "html", "templ", "twig" },
+        },
       },
     },
   },
