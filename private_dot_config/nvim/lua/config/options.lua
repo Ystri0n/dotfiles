@@ -3,3 +3,4 @@
 -- Add any additional options here
 vim.g.autoformat = false
 vim.g.netrw_dirhistmax = 0
+vim.opt.spelllang = { "en", "fr" }
