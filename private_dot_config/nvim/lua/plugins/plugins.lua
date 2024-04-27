@@ -8,6 +8,9 @@ return {
         require("luasnip.loaders.from_vscode").lazy_load()
       end,
     },
+    opts = {
+      region_check_events = "CursorMoved",
+    },
   },
   {
     "lukas-reineke/indent-blankline.nvim",
@@ -20,6 +23,9 @@ return {
   {
     "neovim/nvim-lspconfig",
     opts = {
+      diagnostics = {
+        virtual_text = false,
+      },
       servers = {
         html = {
           filetypes = { "html", "templ", "twig" },
