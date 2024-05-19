@@ -1,18 +1,5 @@
 return {
   {
-    "L3MON4D3/LuaSnip",
-    dependencies = {
-      "rafamadriz/friendly-snippets",
-      config = function()
-        require("luasnip").filetype_extend("twig", { "html" })
-        require("luasnip.loaders.from_vscode").lazy_load()
-      end,
-    },
-    opts = {
-      region_check_events = "CursorMoved",
-    },
-  },
-  {
     "lukas-reineke/indent-blankline.nvim",
     opts = {
       indent = {
@@ -61,5 +48,8 @@ return {
     opts = {
       ensure_installed = "all",
     },
+  },
+  {
+    "Ystri0n/nvim-ts-autotag",
   },
 }
