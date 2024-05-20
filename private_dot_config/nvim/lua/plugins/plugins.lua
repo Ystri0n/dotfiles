@@ -49,7 +49,4 @@ return {
       ensure_installed = "all",
     },
   },
-  {
-    "Ystri0n/nvim-ts-autotag",
-  },
 }
