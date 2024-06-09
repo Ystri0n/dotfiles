@@ -16,12 +16,13 @@ export ZSH_COMPDUMP="$XDG_CACHE_HOME/zsh/zcompdump-$ZSH_VERSION"
 
 zstyle :omz:plugins:ssh-agent identities GitHub OVH
 
+export NVM_DIR="$XDG_DATA_HOME/nvm"
 export VI_MODE_SET_CURSOR=true
 
 typeset -A ZSH_HIGHLIGHT_STYLES
 ZSH_HIGHLIGHT_STYLES[path]='fg=blue,bold'
 
-plugins=(colored-man-pages docker docker-compose fd fzf gpg-agent grc httpie npm ripgrep rust ssh-agent starship sudo vi-mode web-search zsh-autosuggestions zsh-syntax-highlighting)
+plugins=(colored-man-pages docker docker-compose fd fzf gpg-agent grc httpie npm nvm ripgrep rust ssh-agent starship sudo vi-mode web-search zsh-autosuggestions zsh-syntax-highlighting)
 
 source "$ZSH/oh-my-zsh.sh"
 
