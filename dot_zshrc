@@ -22,7 +22,7 @@ export VI_MODE_SET_CURSOR=true
 typeset -A ZSH_HIGHLIGHT_STYLES
 ZSH_HIGHLIGHT_STYLES[path]='fg=blue,bold'
 
-plugins=(colored-man-pages docker docker-compose fd fzf gpg-agent grc httpie npm nvm ripgrep rust ssh-agent starship sudo vi-mode web-search zsh-autosuggestions zsh-syntax-highlighting)
+plugins=(colored-man-pages docker docker-compose fzf gpg-agent grc httpie npm nvm rust ssh-agent starship sudo vi-mode web-search zsh-autosuggestions zsh-syntax-highlighting)
 
 source "$ZSH/oh-my-zsh.sh"
 
